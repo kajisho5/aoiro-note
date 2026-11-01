@@ -1,23 +1,24 @@
-baseURL = "https://aoiro-note.com/"
+baseURL = "/"
 languageCode = "ja"
 title = "aoiro-note"
+theme = "PaperMod"
 hasCJKLanguage = true
-enableRobotsTXT = false # static/robots.txt を使用
+paginate = 10
 
 [params]
+  env = "production"
   description = "個人事業主・フリーランスのための青色申告とクラウド会計ソフト（freee／マネーフォワード／弥生）の実務メモ。"
-  tagline = "青色申告と会計ソフトの実務メモ"
-  author = "梶山 翔悟"
-  authorRole = "SEVENTHWELL／個人事業主"
-  authorBio = "イベント現場の映像・配信オペレーションを本業とするフリーランス。個人事業の経理・確定申告には会計freeeを利用中。日々の実務で困ったことと解決策を、このサイトにメモしています。"
-
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true # 記事中のCTAボックス等のHTML埋め込みを許可
-  [markup.tableOfContents]
-    startLevel = 2
-    endLevel = 2
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  defaultTheme = "light"
+  [params.homeInfoParams]
+    Title = "青色申告と会計ソフト選びで、遠回りしないための実務メモ。"
+    Content = "運営者自身が個人事業主として、実際にクラウド会計ソフトで請求・経費・確定申告を回しています。その実体験をもとに、ソフトの比較と青色申告の手順をまとめました。（デザイン案B：PaperMod）"
+  [[params.socialIcons]]
+    name = "rss"
+    url = "index.xml"
 
 [menu]
   [[menu.main]]
@@ -32,3 +33,11 @@ enableRobotsTXT = false # static/robots.txt を使用
     name = "運営者情報"
     url = "/about/"
     weight = 3
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 2
