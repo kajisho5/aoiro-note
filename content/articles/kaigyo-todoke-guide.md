@@ -5,7 +5,7 @@ date: 2026-11-01
 tag: "手順"
 summary: "開業届の書き方と提出方法、青色申告承認申請書など同時に出すべき届出をまとめます。"
 authorline: "aoiro-note 編集部"
-disclosure: "広告：本記事にはアフィリエイトリンクが含まれる場合があります。本記事は一般的な制度の解説であり、個別の判断については税務署または税理士にご確認ください。"
+disclosure: "広告：本記事にはアフィリエイトリンクが含まれます。リンク先の公式サイトで申込が成立した場合、当サイトが報酬を受け取ることがあります。本記事は一般的な制度の解説であり、個別の判断については税務署または税理士にご確認ください。"
 toc: true
 ---
 
@@ -75,3 +75,11 @@ toc: true
 ## 届出のあとは帳簿付けを始める
 
 開業届を出したら、日々の取引を帳簿に付ける習慣をすぐ始めます。青色申告の65万円控除には複式簿記が必要ですが、クラウド会計ソフトを使えば銀行・カード連携で仕訳の大部分が自動化できます。ソフトの選び方は[会計ソフト3社比較](/articles/freee-mf-yayoi-hikaku/)を参考にしてください。
+
+<div class="cta-box">
+<p><strong>開業届は無料の作成サービスで作れます</strong><br>フォーム入力で開業届と青色申告承認申請書を作成できるサービスがあります</p>
+<a class="btn" href="https://px.a8.net/svt/ejp?a8mat=4BGAV0+276O8I+4JGQ+1NQUK2" rel="sponsored nofollow">マネーフォワード クラウド開業届を見る</a>
+<img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=4BGAV0+276O8I+4JGQ+1NQUK2" alt="">
+<p style="margin-top:12px"><a href="https://px.a8.net/svt/ejp?a8mat=4BGAV0+22F7EA+35XE+HZPWI" rel="sponsored nofollow">弥生のかんたん開業届はこちら</a></p>
+<img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=4BGAV0+22F7EA+35XE+HZPWI" alt="">
+</div>

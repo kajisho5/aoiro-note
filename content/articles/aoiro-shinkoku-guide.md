@@ -5,7 +5,7 @@ date: 2026-11-01
 tag: "手順"
 summary: "青色申告に切り替える手順と、最大65万円控除を受けるための3要件を解説します。"
 authorline: "aoiro-note 編集部"
-disclosure: "広告：本記事にはアフィリエイトリンクが含まれる場合があります。本記事は一般的な制度の解説であり、個別の税務判断については税務署または税理士にご確認ください。"
+disclosure: "広告：本記事にはアフィリエイトリンクが含まれます。リンク先の公式サイトで申込が成立した場合、当サイトが報酬を受け取ることがあります。本記事は一般的な制度の解説であり、個別の税務判断については税務署または税理士にご確認ください。"
 toc: true
 ---
 
@@ -77,4 +77,10 @@ toc: true
 <div class="conclusion">
 <strong>まとめ</strong>
 <p>青色申告は「申請の期限」と「65万円控除の3要件」だけ押さえれば、あとは帳付けの自動化の問題です。申請書は開業届と同時に出し、帳付けは会計ソフトに任せるのが最短ルートです。</p>
+</div>
+
+<div class="cta-box">
+<p><strong>会計freee 公式サイト</strong><br>無料体験で実際の操作感を確認できます</p>
+<a class="btn" href="https://px.a8.net/svt/ejp?a8mat=4BGAV0+1DEZZM+3SPO+9FDXOI" rel="sponsored nofollow">freeeの公式サイトを見る</a>
+<img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=4BGAV0+1DEZZM+3SPO+9FDXOI" alt="">
 </div>

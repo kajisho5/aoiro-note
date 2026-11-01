@@ -5,7 +5,7 @@ date: 2026-11-01
 tag: "経費"
 summary: "経費にできるもの・できないものの線引きと、家事按分の考え方、領収書保管のルールを解説します。"
 authorline: "aoiro-note 編集部"
-disclosure: "広告：本記事にはアフィリエイトリンクが含まれる場合があります。本記事は一般的な制度の解説であり、個別の税務判断については税務署または税理士にご確認ください。"
+disclosure: "広告：本記事にはアフィリエイトリンクが含まれます。リンク先の公式サイトで申込が成立した場合、当サイトが報酬を受け取ることがあります。本記事は一般的な制度の解説であり、個別の税務判断については税務署または税理士にご確認ください。"
 toc: true
 ---
 
@@ -71,3 +71,9 @@ toc: true
 2024年1月からは、メールやWebサイトから受け取った領収書・請求書などの「電子取引データ」は、紙に印刷しての保存ではなく、**電子データのまま保存することが義務**になりました。検索できる形で保存する要件もあります。
 
 実務上は、電子で受け取った書類を会計ソフトに取り込んで保存するのが一番確実です。各社の電子帳簿保存法への対応は[会計ソフト3社比較](/articles/freee-mf-yayoi-hikaku/)でも比較しています。
+
+<div class="cta-box">
+<p><strong>会計freee 公式サイト</strong><br>無料体験で実際の操作感を確認できます</p>
+<a class="btn" href="https://px.a8.net/svt/ejp?a8mat=4BGAV0+1DEZZM+3SPO+9FDXOI" rel="sponsored nofollow">freeeの公式サイトを見る</a>
+<img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=4BGAV0+1DEZZM+3SPO+9FDXOI" alt="">
+</div>
