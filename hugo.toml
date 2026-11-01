@@ -1,4 +1,4 @@
-baseURL = "https://aoiro-note.com/"
+baseURL = "/"
 languageCode = "ja"
 title = "aoiro-note"
 hasCJKLanguage = true
