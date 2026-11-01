@@ -1,0 +1,67 @@
+baseURL: /
+languageCode: ja
+title: aoiro-note
+theme: Stack
+hasCJKLanguage: true
+paginate: 10
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+    tableOfContents:
+        startLevel: 2
+        endLevel: 2
+
+params:
+    mainSections:
+        - articles
+    featuredImageField: image
+    rssFullContent: true
+    description: "個人事業主・フリーランスのための青色申告とクラウド会計ソフト（freee／マネーフォワード／弥生）の実務メモ。（デザイン案C：Stack）"
+    sidebar:
+        emoji: 🖋️
+        subtitle: "青色申告と会計ソフトの実務メモ"
+    article:
+        math: false
+        toc: true
+        readingTime: true
+        headingAnchor: false
+    dateFormat:
+        published: "2006年1月2日"
+        lastUpdated: "2006年1月2日"
+    widgets:
+        homepage:
+            - type: search
+            - type: archives
+              params:
+                  limit: 5
+            - type: tag-cloud
+              params:
+                  limit: 10
+        page:
+            - type: toc
+
+menu:
+    main:
+        - identifier: home
+          name: ホーム
+          url: /
+          weight: -100
+          params:
+              icon: home
+              newTab: false
+        - identifier: hikaku
+          name: 会計ソフト比較
+          url: articles/freee-mf-yayoi-hikaku/
+          weight: 1
+        - identifier: guide
+          name: 青色申告ガイド
+          url: articles/aoiro-shinkoku-guide/
+          weight: 2
+        - identifier: about
+          name: 運営者情報
+          url: about/
+          weight: 3
+          params:
+              icon: user

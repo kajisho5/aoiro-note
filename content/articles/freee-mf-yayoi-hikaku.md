@@ -45,8 +45,8 @@ freeeは「簿記の知識がなくても使える」設計が最大の特徴で
 
 <div class="cta-box">
 <p><strong>会計freee 公式サイト</strong><br>無料体験で実際の操作感を確認できます</p>
-<a class="btn" href="https://px.a8.net/svt/ejp?a8mat=4BGAV0+1DEZZM+3SPO+9FDXOI" rel="sponsored nofollow">freeeの公式サイトを見る</a>
-<img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=4BGAV0+1DEZZM+3SPO+9FDXOI" alt="">
+<!-- TODO: ASPのfreeeアフィリエイトリンクに差し替え -->
+<a class="btn" href="#" rel="sponsored nofollow">freeeの公式サイトを見る</a>
 </div>
 
 ## マネーフォワード クラウドの特徴
@@ -57,8 +57,8 @@ freeeは「簿記の知識がなくても使える」設計が最大の特徴で
 
 <div class="cta-box">
 <p><strong>マネーフォワード クラウド確定申告 公式サイト</strong></p>
-<a class="btn" href="https://px.a8.net/svt/ejp?a8mat=4BGAV0+1IRWFM+4JGQ+BWVTE" rel="sponsored nofollow">マネーフォワードの公式サイトを見る</a>
-<img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=4BGAV0+1IRWFM+4JGQ+BWVTE" alt="">
+<!-- TODO: ASPのマネーフォワード アフィリエイトリンクに差し替え -->
+<a class="btn" href="#" rel="sponsored nofollow">マネーフォワードの公式サイトを見る</a>
 </div>
 
 ## 弥生青色申告オンラインの特徴
@@ -69,8 +69,8 @@ freeeは「簿記の知識がなくても使える」設計が最大の特徴で
 
 <div class="cta-box">
 <p><strong>弥生青色申告オンライン 公式サイト</strong></p>
-<a class="btn" href="https://px.a8.net/svt/ejp?a8mat=4BGAUZ+DSJJAQ+35XE+5YJRM" rel="sponsored nofollow">弥生の公式サイトを見る</a>
-<img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4BGAUZ+DSJJAQ+35XE+5YJRM" alt="">
+<!-- TODO: ASPの弥生アフィリエイトリンクに差し替え -->
+<a class="btn" href="#" rel="sponsored nofollow">弥生の公式サイトを見る</a>
 </div>
 
 ## 失敗しない選び方
