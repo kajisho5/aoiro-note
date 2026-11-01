@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ if .IsHome }}{{ .Site.Title }} | フリーランスの青色申告と会計ソフトの実務メモ{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }} | フリーランスの青色申告と会計ソフトの実務メモ{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:image" content="{{ "ogp.png" | absURL }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }} | フリーランスの青色申告と会計ソフトの実務メモ{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
+<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta name="twitter:image" content="{{ "ogp.png" | absURL }}">
+<link rel="canonical" href="{{ .Permalink }}">
+<link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ "style.css" | relURL }}">
+</head>
+<body>
+<div class="topbar"><div class="inner"><span>AOIRO-NOTE.COM</span><span>個人事業主・フリーランスの経理ノート</span></div></div>
+<header class="site-header">
+  <div class="inner">
+    <a class="logo" href="{{ "/" | relURL }}">
+      <svg class="mark" width="40" height="40" viewBox="0 0 48 48" aria-hidden="true"><rect x="2" y="2" width="44" height="44" rx="9" fill="#18181b"/><path d="M13 15h22M13 24h22M13 33h13" stroke="#fff" stroke-width="3.4" stroke-linecap="round"/><circle cx="35" cy="33" r="3.2" fill="#2563eb"/></svg>
+      <span><span class="word">aoiro<em>-note</em></span><small>{{ .Site.Params.tagline }}</small></span>
+    </a>
+    <nav class="main-nav">
+      {{ range .Site.Menus.main }}<a href="{{ .URL }}">{{ .Name }}</a>{{ end }}
+    </nav>
+  </div>
+</header>
+{{ block "main" . }}{{ end }}
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <div class="brand">aoiro-note</div>
+        <p>青色申告と会計ソフトの実務メモ<br>運営：{{ .Site.Params.author }}</p>
+      </div>
+      <nav>
+        <a href="{{ "/about/" | relURL }}">運営者情報</a>
+        <a href="{{ "/privacy/" | relURL }}">プライバシーポリシー</a>
+        <a href="{{ "/articles/" | relURL }}">記事一覧</a>
+        <a href="{{ "/" | relURL }}">トップ</a>
+      </nav>
+    </div>
+    <p>当サイトはアフィリエイトプログラムを利用しています。記事内のリンク経由で申込があった場合、運営者が報酬を受け取ることがあります。</p>
+    <p>&copy; {{ now.Format "2006" }} aoiro-note</p>
+  </div>
+</footer>
+</body>
+</html>

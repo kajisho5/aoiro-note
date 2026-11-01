@@ -1,0 +1,17 @@
+{{ define "main" }}
+<main class="wrap">
+  <section class="block">
+    <div class="sec-head"><span class="no">List</span><h2>{{ .Title }}</h2><span class="en">ARTICLES</span></div>
+    <div class="cards">
+      {{ range .Pages }}
+      <div class="card">
+        <div class="meta"><span class="tag">{{ .Params.tag | default "記事" }}</span><time>{{ .Date.Format "2006.01.02" }}</time></div>
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <p>{{ .Params.summary }}</p>
+        <a class="more" href="{{ .RelPermalink }}">続きを読む</a>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+</main>
+{{ end }}

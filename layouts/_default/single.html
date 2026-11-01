@@ -1,0 +1,45 @@
+{{ define "main" }}
+<main class="wrap">
+<article class="post">
+  <h1>{{ .Title }}</h1>
+  <p class="post-meta">
+    {{ if not .Date.IsZero }}<span>{{ .Date.Format "2006年1月2日" }}</span>{{ end }}
+    {{ with .Params.authorline }}<span>{{ . }}</span>{{ end }}
+    <span>読了目安：約{{ .ReadingTime }}分</span>
+  </p>
+  {{ with .Params.disclosure }}<div class="ad-disclosure">{{ . }}</div>{{ end }}
+  {{ if .Params.toc }}
+  <div class="toc">
+    <p>目次</p>
+    {{ .TableOfContents }}
+  </div>
+  {{ end }}
+  {{ .Content }}
+
+  <div class="author-box">
+    <span class="avatar">梶</span>
+    <div>
+      <div class="who">この記事を書いた人</div>
+      <div class="name">{{ .Site.Params.author }}</div>
+      <p>{{ .Site.Params.authorBio }}</p>
+    </div>
+  </div>
+
+  {{ $related := where (where .Site.RegularPages "Section" "articles") "RelPermalink" "ne" .RelPermalink }}
+  {{ with $related }}
+  <div class="related">
+    <p>あわせて読みたい</p>
+    <div class="cards">
+      {{ range first 3 . }}
+      <div class="card">
+        <div class="meta"><span class="tag">{{ .Params.tag | default "記事" }}</span><time>{{ .Date.Format "2006.01.02" }}</time></div>
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <p>{{ .Params.summary }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+</article>
+</main>
+{{ end }}

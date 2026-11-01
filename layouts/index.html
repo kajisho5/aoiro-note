@@ -1,0 +1,75 @@
+{{ define "main" }}
+<div class="hero">
+    <div class="wrap">
+    <span class="kicker">個人事業主の経理ノート</span>
+    <h1>青色申告と会計ソフト選びで、<br><span class="hl">遠回りしない</span>ための実務メモ。</h1>
+    <p class="lead">運営者自身が個人事業主として、実際にクラウド会計ソフトで請求・経費・確定申告を回しています。その実体験をもとに、ソフトの比較と青色申告の手順をまとめました。</p>
+    <a class="btn" href="{{ "/articles/freee-mf-yayoi-hikaku/" | relURL }}">会計ソフト3社比較を見る</a>
+    <a class="btn sub" href="{{ "/articles/aoiro-shinkoku-guide/" | relURL }}">青色申告ガイド</a>
+    <div class="byline">
+      <span class="avatar">梶</span>
+      <span>書いている人：{{ .Site.Params.author }}（{{ .Site.Params.authorRole }}）</span>
+    </div>
+  </div>
+</div>
+
+<main class="wrap">
+  <section class="block">
+    <div class="sec-head"><span class="no">No.01</span><h2>新着記事</h2><span class="en">ARTICLES</span></div>
+    <div class="cards">
+      {{ range where .Site.RegularPages "Section" "articles" }}
+      <div class="card">
+        <div class="meta"><span class="tag">{{ .Params.tag | default "記事" }}</span><span class="meta-r"><time>{{ .Date.Format "2006.01.02" }}</time>・約{{ .ReadingTime }}分</span></div>
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <p>{{ .Params.summary }}</p>
+        <a class="more" href="{{ .RelPermalink }}">続きを読む</a>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="sec-head"><span class="no">No.02</span><h2>このサイトの3つの柱</h2><span class="en">ABOUT</span></div>
+    <div class="cards">
+      <div class="card">
+        <div class="meta"><span class="tag">比較</span></div>
+        <h3>クラウド会計ソフト比較</h3>
+        <p>freee・マネーフォワード クラウド・弥生青色申告オンラインを、青色申告65万円控除・e-Tax・インボイス対応・料金で横並び比較します。</p>
+        <a class="more" href="{{ "/articles/freee-mf-yayoi-hikaku/" | relURL }}">比較記事を読む</a>
+      </div>
+      <div class="card">
+        <div class="meta"><span class="tag">手順</span></div>
+        <h3>青色申告・確定申告ガイド</h3>
+        <p>青色申告承認申請の期限、白色申告との違い、65万円控除の要件など、つまずきやすいポイントを手順で解説します。</p>
+        <a class="more" href="{{ "/articles/aoiro-shinkoku-guide/" | relURL }}">ガイドを読む</a>
+      </div>
+      <div class="card">
+        <div class="meta"><span class="tag">実体験</span></div>
+        <h3>現場フリーランスの実務メモ</h3>
+        <p>見積書・請求書の発行、取引先ごとの入金サイクル、源泉徴収の扱いなど、日々の経理で実際に困ったことと解決策のメモです。</p>
+        <a class="more" href="{{ "/articles/" | relURL }}">記事一覧へ</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="sec-head"><span class="no">No.03</span><h2>会計ソフト早見表</h2><span class="en">QUICK COMPARE</span></div>
+    <div class="table-scroll">
+      <table class="compare">
+        <thead>
+          <tr><th></th><th>freee</th><th>マネーフォワード クラウド</th><th>弥生青色申告オンライン</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>向いている人</th><td>簿記に慣れていない人・自動化重視</td><td>金融連携の数が多い人・他サービス併用</td><td>コストを抑えたい人・老舗の安心感</td></tr>
+          <tr><th>青色申告65万円控除</th><td class="ok">対応</td><td class="ok">対応</td><td class="ok">対応</td></tr>
+          <tr><th>e-Tax申告</th><td class="ok">対応</td><td class="ok">対応</td><td class="ok">対応</td></tr>
+          <tr><th>インボイス制度</th><td class="ok">対応</td><td class="ok">対応</td><td class="ok">対応</td></tr>
+          <tr><th>料金</th><td colspan="3">料金プランは変更が多いため、各公式サイトで最新価格を確認してください（詳細は比較記事へ）</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">※ 本ページには広告（アフィリエイトリンク）が含まれます。料金・機能は各社の公式情報に基づき、定期的に見直します。</p>
+    <p><a href="{{ "/articles/freee-mf-yayoi-hikaku/" | relURL }}">→ 3社の詳しい比較と「タイプ別のおすすめ」を見る</a></p>
+  </section>
+</main>
+{{ end }}
